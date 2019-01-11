@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+<header class="header">
+    <div class="header__brand">
+        <img src="../icons/logo_48.png" alt="Swurl logo">
+        <span class="header__strap">Environment Switcher</span>
+    </div>
+    <h1 class="header__title">Options</h1>
+</header>
+<div class="container">
+    <section class="section">
+        <h2 class="section__title">Sites</h2>
+        <div class="box">
+            <!-- TODO: add helper icon so people can see what you should put (explain how it affects all urls) -->
+            <label for="url">Site URL</label>
+            <input type="text" id="url" data-swurl-input>
+            <button data-swurl-save>Save</button>
+        </div>
+    </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

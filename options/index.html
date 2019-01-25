@@ -2,26 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Environment Switcher - Options</title>
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
 <header class="header">
     <div class="header__brand">
         <img src="../icons/logo_48.png" alt="Swurl logo">
-        <span class="header__strap">Environment Switcher</span>
+        <span class="header__strap">Switch Environment</span>
     </div>
     <h1 class="header__title">Options</h1>
 </header>
 <div class="container">
-    <section class="section">
-        <h2 class="section__title">Sites</h2>
-        <div class="box">
-            <!-- TODO: add helper icon so people can see what you should put (explain how it affects all urls) -->
-            <label for="url">Site URL</label>
-            <input type="text" id="url" data-swurl-input>
-            <button data-swurl-save>Save</button>
+    <h2>Sites</h2>
+    <button data-cpt-add-new-site class="mb-3">Add new site</button>
+    <div data-cpt-message-container></div>
+    <div data-cpt-site-container></div>
+
+    <div class="box">
+        <div data-swurl-sites>
+            <button data-swurl-clear>Clear data</button>
         </div>
-    </section>
+    </div>
 </div>
 <script src="script.js"></script>
 </body>
